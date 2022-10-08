@@ -30,9 +30,9 @@ namespace ClassLibrary1
 
                 if (userInput == -1)
                     break;
-                
+                //
 
-                Category userCat = new Category();
+                Category userCategory = new Category();
                 int previousCat=0; 
 
                 foreach (var category in Enum.GetValues(typeof(Category)))
@@ -40,14 +40,14 @@ namespace ClassLibrary1
                    
                     if (userInput >= previousCat && userInput <= (int)category)
                     {
-                        userCat = (Category)category;
+                        userCategory = (Category)category;
                         break;
                     }
                     previousCat = (int)category + 1;
 
                 }
                
-                Console.WriteLine("Your category: "+ userCat);
+                Console.WriteLine("Your category: "+ userCategory);
                
 
             }while(userInput != -1);
