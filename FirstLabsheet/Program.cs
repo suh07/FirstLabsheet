@@ -12,6 +12,8 @@ namespace FirstLabsheet
         static void Main(string[] args)
         {
             EnumLauncher.Launch();
+
+            //test
         }
     }
 }
